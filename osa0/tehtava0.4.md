@@ -9,7 +9,7 @@ sequenceDiagram
     
     browser->>server: POST https://studies.cs.helsinki.fi/exampleapp/new_note
     activate server
-    Note left of server: Server receives the new note\nand saves it to memory/database
+    Note left of server: Server receives the new note and saves it to memory
     
     server-->>browser: HTTP 302 Redirect to /notes
     deactivate server
